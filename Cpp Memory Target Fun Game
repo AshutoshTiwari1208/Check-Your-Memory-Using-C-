@@ -1,0 +1,75 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Yo Dude What's up ??"<<endl<<endl<<endl;
+    int arr[10];
+    cout<<"So , the game is like this ..... You will enter 10 digits and after writing those"<<endl<<"You have to repeat them in exact same Order "<<endl<<"Easy Right ??";
+    cout<<endl<<endl<<"Remember No Pattern should be their ......"<<endl<<endl;
+    cout<<endl <<endl <<"Ok here we go... Write the number and press enter"<<endl;
+
+    for(int i=0;i<10;i++)
+    {
+        if(i==0)
+        {
+                cout<<endl<<"Write 1st Number "<<"and press enter : ";
+        cin>>arr[i];
+        }
+        else{
+
+                cout<<endl<<"Cool ! Write Number "<<i+1<<" Now : ";
+        cin>>arr[i];
+
+        }
+    }
+    if(arr[0]==9)
+    {
+        cout<<endl<<endl<<"That Was Someone's Phone Number..... YOU are fired"<<endl<<endl;
+        return 0;
+    }
+     for(int i=0;i<8;i++)
+    {
+        if(arr[i]+2==arr[i+1]+1==arr[i+2])
+        {
+            cout<<endl<<endl<<endl<<"he Game is Sold Out ! .... You Performed Some Wrong Deed here ! "<<endl <<endl<<endl;
+            cout<<endl<<endl<<endl<<" Thanks to my Legendry Coding Skills to figure it out"<<endl<<endl;
+            return 0;
+        }
+        if(arr[i]==arr[i+1]==arr[i+2])
+        {
+            cout<<endl<<endl<<endl<<"The Game is Sold Out ! .... You Performed Some Wrong Deed here ! "<<endl <<endl<<endl;
+            cout<<endl<<endl<<endl<<" Thanks to my Legendry Coding Skills to figure it out"<<endl<<endl;
+            return 0;
+        }
+    }
+
+    cout << string( 60, '\n' );
+
+    cout<<endl<<endl<<"Yeahh !! Now Let's see what talent you got Tine DD";
+    cout<<endl<<endl<<"Start Writing the Numbers in exact Order Now ..."<<"Remember After Every Number Press Enter ..."<<endl<<endl;
+    int k=0;
+
+
+    for(int i=0;i<10;i++)
+    {
+        int temp;
+        cout<<endl<<"Rewrite Number "<<k+1<< " again : ";
+        cin>>temp;
+
+        if(temp!=arr[k])
+        {
+                cout<<endl<<endl<<"NO ! NO ! NO ! NO !"<<endl<<endl<<endl;
+
+            cout<<endl<<endl<<endl<<endl<<" OR Khelo PubG ... YaadDaash Gayi Na ...";
+            cout<<endl<<endl<<endl<<" Band Karo ye game FALTU Game Abbb "<<endl<<endl<<endl;
+            return 0;
+
+        }
+        k++;
+
+    }
+    cout<<endl<<endl<<endl<<"Ohoohohhohhh........Great Work Dude !!!"<<endl<<endl<<endl<<endl;
+    cout<<endl<<endl<<"Your Memory is Working Well"<<endl<<endl<<endl;
+    return 0;
+
+}
